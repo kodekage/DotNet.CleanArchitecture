@@ -1,0 +1,26 @@
+version: "3"
+
+networks:
+  web:
+    external: false
+
+volumes:
+  datadrive:
+    external: false
+  mysql_db:
+
+services:  
+  # Database instance
+  mysql:
+    image: mysql:latest
+    volumes:
+      - mysql_db:/var/lib/mysql
+      - ./_MySQL_Init_Script:/docker-entrypoint-initdb.d
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpw
+      MYSQL_DATABASE: hrdb
+      MYSQL_USER: hrdbuser
+      MYSQL_PASSWORD: userpw
