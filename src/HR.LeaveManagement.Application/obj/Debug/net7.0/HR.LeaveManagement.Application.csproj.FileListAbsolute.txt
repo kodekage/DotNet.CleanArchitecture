@@ -1,0 +1,15 @@
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/bin/Debug/net7.0/HR.LeaveManagement.Application.deps.json
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/bin/Debug/net7.0/HR.LeaveManagement.Application.dll
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/bin/Debug/net7.0/HR.LeaveManagement.Application.pdb
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/bin/Debug/net7.0/HR.LeaveManagement.Domain.dll
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/bin/Debug/net7.0/HR.LeaveManagement.Domain.pdb
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/HR.LeaveManagement.Application.csproj.AssemblyReference.cache
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/HR.LeaveManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/HR.LeaveManagement.Application.AssemblyInfoInputs.cache
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/HR.LeaveManagement.Application.AssemblyInfo.cs
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/HR.LeaveManagement.Application.csproj.CoreCompileInputs.cache
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/HR.LeaveManagement.Application.csproj.CopyComplete
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/HR.LeaveManagement.Application.dll
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/refint/HR.LeaveManagement.Application.dll
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/HR.LeaveManagement.Application.pdb
+/Users/kodekage/Desktop/upskilling/CSHARP/clean-architecture/src/HR.LeaveManagement.Application/obj/Debug/net7.0/ref/HR.LeaveManagement.Application.dll
