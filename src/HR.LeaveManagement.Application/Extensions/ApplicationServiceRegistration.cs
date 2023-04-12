@@ -2,7 +2,7 @@ using System.Reflection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HR.LeaveManagement.Application;
+namespace HR.LeaveManagement.Application.Extensions;
 
 public static class ApplicationServiceRegistration
 {

@@ -1,4 +1,6 @@
+using Hr.LeaveManagement.Api.Middleware;
 using HR.LeaveManagement.Application;
+using HR.LeaveManagement.Application.Extensions;
 using Hr.LeaveManagement.Infrastructure.Extensions;
 using HR.LeaveManagement.Persistence.Extensions;
 
@@ -26,6 +28,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseAuthorization();
 
