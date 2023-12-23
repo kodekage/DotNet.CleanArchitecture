@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HR.LeaveManagement.Persistence.Repositories;
 
-public class LeaveTypeRepository: GenericRepository<LeaveType>, ILeaveTypeRepository
+public class LeaveTypeRepository : GenericRepository<LeaveType>, ILeaveTypeRepository
 {
     public LeaveTypeRepository(HrDbContext context) : base(context)
     {

@@ -6,7 +6,7 @@ using MediatR;
 
 namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeaveType;
 
-public class CreateLeaveTypeCommandHandler: IRequestHandler<CreateLeaveTypeCommand, int>
+public class CreateLeaveTypeCommandHandler : IRequestHandler<CreateLeaveTypeCommand, int>
 {
     private readonly IMapper _mapper;
     private readonly ILeaveTypeRepository _leaveTypeRepository;
@@ -29,10 +29,10 @@ public class CreateLeaveTypeCommandHandler: IRequestHandler<CreateLeaveTypeComma
             _logger.LogWarning("Validation errors in updated request for {0} - {1}", nameof(LeaveType), request.Name);
             throw new BadRequestException("Invalid LeaveType", validationResult);
         }
-        
+
         // convert to main entity object
         var leaveTypeToCreate = _mapper.Map<Domain.LeaveType>(request);
-        
+
         // add to DB
         await _leaveTypeRepository.CreateAsync(leaveTypeToCreate);
 

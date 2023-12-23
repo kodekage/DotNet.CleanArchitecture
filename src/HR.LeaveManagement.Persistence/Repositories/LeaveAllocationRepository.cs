@@ -4,7 +4,7 @@ using HR.LeaveManagement.Persistence.DatabaseContext;
 
 namespace HR.LeaveManagement.Persistence.Repositories;
 
-public class LeaveAllocationRepository: GenericRepository<LeaveAllocation>, ILeaveAllocationRepository
+public class LeaveAllocationRepository : GenericRepository<LeaveAllocation>, ILeaveAllocationRepository
 {
     public LeaveAllocationRepository(HrDbContext context) : base(context)
     {

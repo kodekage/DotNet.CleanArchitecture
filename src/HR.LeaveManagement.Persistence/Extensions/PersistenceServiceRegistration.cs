@@ -11,18 +11,13 @@ public static class PersistenceServiceRegistration
 {
     public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString("HrDbConnectionString");
-
-        services.AddDbContext<HrDbContext>(o =>
-        {
-            o.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
-        });
+        services.AddScoped(_ => new HrDbContext(configuration.GetConnectionString("HrDbConnectionString"), true));
 
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
         services.AddScoped<ILeaveRequestRepository, LeaveRequestRepository>();
         services.AddScoped<ILeaveAllocationRepository, LeaveAllocationRepository>();
-        
+
         return services;
     }
 }

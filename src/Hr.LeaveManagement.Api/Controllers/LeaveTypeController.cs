@@ -21,7 +21,7 @@ namespace Hr.LeaveManagement.Api.Controllers
         {
             _mediator = mediator;
         }
-        
+
         // GET: api/LeaveType
         [HttpGet]
         public async Task<List<LeaveTypeDto>> Get()
@@ -47,7 +47,7 @@ namespace Hr.LeaveManagement.Api.Controllers
         public async Task<ActionResult> Post(CreateLeaveTypeCommand leaveType)
         {
             var response = await _mediator.Send(leaveType);
-            
+
             return CreatedAtAction(nameof(Get), new { id = response });
         }
 

@@ -3,14 +3,14 @@ using HR.LeaveManagement.Application.Contracts.Persistence;
 
 namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeaveType;
 
-public class CreateLeaveTypeCommandValidator: AbstractValidator<CreateLeaveTypeCommand>
+public class CreateLeaveTypeCommandValidator : AbstractValidator<CreateLeaveTypeCommand>
 {
     private readonly ILeaveTypeRepository _leaveTypeRepository;
 
     public CreateLeaveTypeCommandValidator(ILeaveTypeRepository leaveTypeRepository)
     {
         _leaveTypeRepository = leaveTypeRepository;
-        
+
         RuleFor(p => p.Name)
             .NotEmpty().WithMessage("{PropertyName} is required")
             .NotNull()

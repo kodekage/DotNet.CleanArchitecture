@@ -7,7 +7,7 @@ using SendGrid.Helpers.Mail;
 
 namespace Hr.LeaveManagement.Infrastructure.Services;
 
-public class EmailService: IEmailService
+public class EmailService : IEmailService
 {
     private readonly EmailSettings _emailSettings;
 
@@ -15,7 +15,7 @@ public class EmailService: IEmailService
     {
         _emailSettings = emailSettings.Value;
     }
-    
+
     public async Task<bool> SendEmail(EmailMessage email)
     {
         var client = new SendGridClient(_emailSettings.ApiKey);
